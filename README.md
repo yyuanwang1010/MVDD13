@@ -17,5 +17,5 @@ Download link: [baidupan](链接：https://pan.baidu.com/s/1HpugHcJLdbu07J0jLPfa
 The relevant codes of detectors are publicly available, and you can reproduce all results in our paper.
 https://github.com/yyuanwang1010/MVDD13/tree/master/MVDD13_code_github
 
-# Contactation
-Any questions, you can contact: Yuanyuan Wang, Email: yyuanwang1010@163.com;
+# Email
+Any questions, you can contact: yyuanwang1010@163.com;
