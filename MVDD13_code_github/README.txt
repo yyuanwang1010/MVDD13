@@ -1,6 +1,11 @@
-一、环境配置
-本项目基于AutoDL、mmdetection、mmyolo、PaddleDetection涉及具体环境配置请参照相关的官方文档
-请引用该文章
+一、Introduction
+This project is finished based on the AutoDL, mmdetection, mmyolo and PaddleDetection. For the specific configurations, please refer to the following official documents:
+mmdetection：https://mmdetection.readthedocs.io/en/latest/
+mmyolo：https://mmyolo.readthedocs.io/en/latest/
+PaddleDetection：https://hub.njuu.cf/PaddlePaddle/PaddleDetection/tree/release/2.6/docs
+AutoDL:https://www.autodl.com/docs/
+
+If you use mmdetection in your research, please cite this project.
 @article{mmdetection,
   title   = {{MMDetection}: Open MMLab Detection Toolbox and Benchmark},
   author  = {Chen, Kai and Wang, Jiaqi and Pang, Jiangmiao and Cao, Yuhang and
@@ -12,16 +17,11 @@
   journal= {arXiv preprint arXiv:1906.07155},
   year={2019}
 }
-相关官方文档链接
-mmdetection：https://mmdetection.readthedocs.io/en/latest/
-mmyolo：https://mmyolo.readthedocs.io/en/latest/
-PaddleDetection：https://hub.njuu.cf/PaddlePaddle/PaddleDetection/tree/release/2.6/docs
-AutoDL:https://www.autodl.com/docs/
 
-mmdetection涉及到的检测模型包括FCOS、yolox、yolov3、Retinanet、Faster-RCNN、DETR、yolov5
-PaddleDetection涉及到的模型SSD
+mmdetection contains: FCOS、yolox、yolov3、Retinanet、Faster-RCNN、DETR、yolov5
+PaddleDetection contains: SSD
 
-以mmdetection为例本项目的环境配置如下
+For instance, the configuration of mmdetection is as follows:
 
 System environment:
     sys.platform: linux
@@ -61,28 +61,29 @@ Runtime environment:
     Distributed training: False
     GPU number: 1
 
-二、MVDD13数据集准备
+二、MVDD13 dataset
 
-├── MVDD13: 数据集根目录
-	├── train: 所有训练图像文件夹(25541张)
-	├── val: 所有验证图像文件夹(2838张)
-        ├── test:所有测试图像文件夹(7095张)
-	└── annotations: 对应标注文件夹
-		├── instances_train.json		: 对应目标检测的训练集标注文件
-		├── instances_val.json			: 对应目标检测的验证集标注文件
-		├── instances_test.json			: 对应目标检测的测试集标注文件
-三、在通用模型上训练并测试MVDD13
+├── MVDD13: root
+	├── train: training set (25541)
+	├── val: validation set (2838)
+        ├── test: testing set (7095)
+	└── annotations: label set
+		├── instances_train.json		
+		├── instances_val.json			
+		├── instances_test.json			
+
+三、Training and testing process on MVDD13
 		
-以在Autodl上运行mmdetection中的yolox为例按照mmdetection相关官方文档配置完成后，可按以下命令运行yolox-MVDD
-1.修改类别：在autodl-tmp/mmdetection-main/mmdet/datasets/coco.py中将类别修改为MVDD13类
+Take running yolox in mmdetection on Autodl as an example, after finishing the configuration according to the relevant official documents of mmdetection, you can run yolox-MVDD according to the following commands:
+1.categories：autodl-tmp/mmdetection-main/mmdet/datasets/coco.py
 
-2.修改类别：在autodl-tmp/mmdetection-main/mmdet/evaluation/functional/class_names.py中将类别修改为MVDD13类
+2.class name：在autodl-tmp/mmdetection-main/mmdet/evaluation/functional/class_names.py
 
-3.训练MVDD13:python autodl-tmp/mmdetection-main/tools/train.py \
+3.training MVDD13:python autodl-tmp/mmdetection-main/tools/train.py \
             >>autodl-tmp/mmdetection-main/mmdetection-main/configs/yolox-MVDD/yolox_s_8xb8-200e_coco-MVDD.py \
             >>--work-dir yolox
 
-4.测试MVDD13:python autodl-tmp/mmdetection-main/tools/test.py \
+4.testing MVDD13:python autodl-tmp/mmdetection-main/tools/test.py \
             >>autodl-tmp/mmdetection-main/mmdetection-main/configs/yolox-MVDD/yolox_s_8xb8-200e_coco-MVDD.py \
             >>autodl-tmp/mmdetection-main/yolox20230823/best_coco_bbox_mAP_epoch_190.pth
 	    >>--cfg-options test_evaluator.classwise=True
