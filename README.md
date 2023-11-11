@@ -8,13 +8,14 @@ warship and submarine). The proposed MVDD13 is equipped with benchmark features 
 # Introduce Dataset
 ![image](https://user-images.githubusercontent.com/63236598/188273495-260a80e9-a2c3-4a82-95d8-c7ca7550b7bc.png)
 
-# Download Dataset
-Images, Labels, Imagesets(training, validation and testing sets) are contained. 
+# Dataset and Code
+Images, Labels, Imagesets(training, validation and testing sets) and code are contained. 
 
-Download link: [baidupan](链接：https://pan.baidu.com/s/1HpugHcJLdbu07J0jLPfawA 
-提取码：iq8r) 
+Download link:
+  *[baidupan]链接：https://pan.baidu.com/s/1HpugHcJLdbu07J0jLPfawA
+  *[Google Drive]链接: https://drive.google.com/drive/folders/1EzlGyZF9FlZRrI77XBd9Pt7RSuEwbWno?usp=sharing
 
-# Code
+# Code and Introduction
 The relevant codes of detectors are publicly available, and you can reproduce all results in our paper.
 https://github.com/yyuanwang1010/MVDD13/tree/master/MVDD13_code_github
 
