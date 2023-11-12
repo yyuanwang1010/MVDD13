@@ -1,4 +1,4 @@
-# MVDD13-Marine Vessel Detection Dataset and Benchmark for Unmanned Surface Vehicles
+# MVDD13#
 
 We introduce a new marine vessel detection dataset, termed MVDD13, which is exclusively established by deploying 35474 images. All images are accurately annotated to be 13-category vessels (cargo,
 passenger, cruise, bulker, tanker, sailingboat, tug, fishing, drill, firefighting, containership,
@@ -12,12 +12,12 @@ warship and submarine). The proposed MVDD13 is equipped with benchmark features 
 Images, Labels, Imagesets(training, validation and testing sets) and code are contained. 
 
 Download link:
-  *[baidupan]链接：https://pan.baidu.com/s/1HpugHcJLdbu07J0jLPfawA
+  *[baidupan]：https://pan.baidu.com/s/19qAHpGWDjMfCeZkNYR_nFA, code:1xvc.
   
-  *[Google Drive]链接: https://drive.google.com/drive/folders/1EzlGyZF9FlZRrI77XBd9Pt7RSuEwbWno?usp=sharing
+  *[Google Drive]: https://drive.google.com/drive/folders/1EzlGyZF9FlZRrI77XBd9Pt7RSuEwbWno?usp=sharing.
 
 # Code and Introduction
-The relevant codes of detectors are publicly available, and you can reproduce all results in our paper.
+The relevant code of detectors are publicly available, and you can reproduce all results in our paper.
 https://github.com/yyuanwang1010/MVDD13/tree/master/MVDD13_code_github
 
 # Email
