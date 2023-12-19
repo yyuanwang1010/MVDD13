@@ -13,7 +13,7 @@ Images, Labels, Imagesets(training, validation and testing sets) and code are co
 
 Download link:
 
-  * [baidupan]：https://pan.baidu.com/s/19qAHpGWDjMfCeZkNYR_nFA, code:1xvc.
+  * [baidupan]：https://pan.baidu.com/s/19qAHpGWDjMfCeZkNYR_nFA
   
   * [Google Drive]：
   - https://drive.google.com/drive/folders/1EzlGyZF9FlZRrI77XBd9Pt7RSuEwbWno?usp=sharing
